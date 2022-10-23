@@ -1,7 +1,9 @@
 {
   "name": "await-async-modal-continue-fun",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development --open"
+    "start": " webpack-dev-server --mode development --open",
+    "deploy": "gh-pages -d dist -o codecommit",
+    "build": "webpack"
   },
   "browserslist": [
     "> 1%",
@@ -26,7 +28,8 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
